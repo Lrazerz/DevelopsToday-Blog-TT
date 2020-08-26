@@ -23,7 +23,7 @@ getAllPostsDirect = async () => {
   try {
     const res = await axios.get('https://simple-blog-api.crew.red/posts');
     // Save only 12 last posts with title and body
-    const validPosts = res.data.filter(post => post.title && post.body).slice(0, 12);
+    const validPosts = res.data.filter(post => post.title && post.body).slice(0, 20);
     return validPosts;
   } catch (e) {
     throw e;
@@ -38,7 +38,7 @@ getAllPosts = () => {
 
       const res = await axios.get(`https://simple-blog-api.crew.red/posts`);
       // Save only 12 last posts with title and body
-      dispatch(_postLoaded(res.data.filter(post => post.title && post.body).slice(0, 12)));
+      dispatch(_postLoaded(res.data.filter(post => post.title && post.body).slice(0, 20)));
     } catch (e) {
       dispatch(_postError(e));
     }
