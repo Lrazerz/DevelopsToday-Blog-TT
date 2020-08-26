@@ -1,14 +1,12 @@
 html {
-    height: 100%;
 }
 
 body {
-    height: 100%;
     font-size: 16px;
     font-family: 'Alata', sans-serif;
     line-height: 1.1;
     letter-spacing: 0.05rem;
     background-color: #858796;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     color: white;
 }

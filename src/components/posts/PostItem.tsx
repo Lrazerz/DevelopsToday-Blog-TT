@@ -13,6 +13,7 @@ const MainContainer = styled.div`
   height: 200px;
   max-height: 200px;
   padding: 5px 10px;
+  margin-bottom: 20px;
   background-color: ${theme.colors.lightGray};
   overflow: hidden;
   box-sizing: border-box;
